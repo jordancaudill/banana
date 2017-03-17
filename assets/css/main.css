@@ -42,6 +42,10 @@
     color: white !important;
 }
 
+.game-icon, .banana-title {
+    margin: 10px;
+}
+
 .add-funds {
     border: none;
     text-transform: none !important;
@@ -71,10 +75,19 @@ background-color: #4fdf97 !important;
 .balance {
     width: 140px;
 }
+
 .avatar {
-    background: url("../images/avatar.jpeg") no-repeat center; 
+    background: url("../images/avatar.jpeg") no-repeat center;
+    background-size: contain;
     width: 66px;
     height: 66px;
+}
+.avatar:hover {
+    cursor: pointer;
+}
+
+.avatar:hover .noti-count {
+    background-color: #FFaaa3;
 }
 
 .noti-count{
@@ -92,4 +105,46 @@ background-color: #4fdf97 !important;
     right: 48px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
+}
+
+.profile {
+    left: 0;
+    height: 100vh;
+    background-color: #1C1F2A;
+    width: 250px;
+}
+.profile-closed {
+    width: 66px; 
+}
+
+.profile-closed .game-icon {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.banner {
+    height: 66px;
+    background-color: #262a39;
+    border-bottom: #303649 solid 2px;
+}
+
+.accent {
+    color: #5648c1;
+}
+
+button{
+    border: none;
+}
+
+
+.profile-button {
+    color: #ddddff; 
+    text-transform: none !important;
+    padding: 10px;
+    height: 66px;
+}
+
+.profile-closed .profile-button {
+    padding: 0;
+    width: 66px;
 }

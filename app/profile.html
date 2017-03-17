@@ -1,0 +1,12 @@
+<div class="profile" ng-class="{'profile-closed': !Main.profileOpened}">
+    <div layout="row" layout-align="start center" class="banner">
+        <md-icon aria-label="Games" class="material-icons white game-icon">games</md-icon>
+        <h6 ng-if="Main.profileOpened" class="md-title white banana-title">Banana</h6>
+    </div>
+    <div layout="column">
+        <md-button layout="row" layout-align="start center" class="profile-button no-margin">
+            <md-icon aria-label="Dashboard" class="material-icons accent btn-icon game-icon">dvr</md-icon>
+            <h6 ng-if="Main.profileOpened" class="md-subhead banana-title">Dashboard</h6>
+        </md-button>
+    </div>
+</div>

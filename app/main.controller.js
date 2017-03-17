@@ -10,8 +10,13 @@
         var vm = this;
 
         // Any logic that needs to run when the controller loads should be placed here.
+        vm.profileOpened = true;
         
-        // Define functions here
+        vm.test = 'center';
 
+        // Define functions here
+        vm.toggleProfile = function() {
+            vm.profileOpened = !vm.profileOpened;
+        };
     }
 })();

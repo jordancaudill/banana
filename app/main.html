@@ -1,15 +1,19 @@
-<div ng-include="'app/nav.html'"></div>
-
-<div layout-xs="column" layout-gt-xs="row" layout-align-gt-xs="space-between center" layout-align-xs="center stretch">
-	<md-whiteframe class="md-whiteframe-1dp article small-article" flex-gt-xs="65"></md-whiteframe>
-	<md-whiteframe class="md-whiteframe-1dp article small-article" flex-gt-xs="35"></md-whiteframe>
-</div>
-<div layout-xs="column" layout-gt-xs="row" layout-align="space-between center" layout-align-xs="center stretch">
-	<md-whiteframe class="md-whiteframe-1dp article large-article" flex-gt-xs="50"></md-whiteframe>
-	<div layout="column" layout-align="space-between stretch" flex-gt-xs="50">
-		<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
-		<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
-		<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
-		<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
+<div layout="row">
+	<div hide-xs ng-include="'app/profile.html'"></div>
+	<div flex>
+		<div ng-include="'app/nav.html'"></div>
+		<div layout-xs="column" layout-gt-xs="row" layout-align-gt-xs="space-between center" layout-align-xs="center stretch">
+			<md-whiteframe class="md-whiteframe-1dp article small-article" flex-gt-xs="65"></md-whiteframe>
+			<md-whiteframe class="md-whiteframe-1dp article small-article" flex-gt-xs="35"></md-whiteframe>
+		</div>
+		<div layout-xs="column" layout-gt-xs="row" layout-align="space-between center" layout-align-xs="center stretch">
+			<md-whiteframe class="md-whiteframe-1dp article large-article" flex-gt-xs="50"></md-whiteframe>
+			<div layout="column" layout-align="space-between stretch" flex-gt-xs="50">
+				<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
+				<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
+				<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
+				<md-whiteframe class="md-whiteframe-1dp article small-article"></md-whiteframe>
+			</div>
+		</div>
 	</div>
 </div>
