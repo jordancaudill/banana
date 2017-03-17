@@ -1,0 +1,29 @@
+{
+  "name": "banana",
+  "version": "1.0.0",
+  "description": "A secret project for secret bananas",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jordancaudill/banana.git"
+  },
+  "author": "Jordan Caudill",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/jordancaudill/banana/issues"
+  },
+  "homepage": "https://github.com/jordancaudill/banana",
+  "dependencies": {
+    "angular": "~1.5.0",
+    "angular-animate": "~1.5.0",
+    "angular-aria": "~1.5.0",
+    "angular-material": "^1.1.1",
+    "angular-messages": "~1.5.0",
+    "angular-route": "~1.5.0",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1"
+  }
+}
