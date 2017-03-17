@@ -4,7 +4,9 @@
   "description": "A secret project for secret bananas",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "dev": "npm-run-all --parallel start watch:browser",
+    "start": "node index.js",
+    "watch:browser": "live-reload --port 9091 ./"
   },
   "repository": {
     "type": "git",
@@ -25,5 +27,9 @@
     "angular-route": "~1.5.0",
     "express": "^4.14.0",
     "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "live-reload": "^1.1.0",
+    "npm-run-all": "^4.0.2"
   }
 }
