@@ -7,7 +7,7 @@
 			<md-button hide-xs ng-if="!Main.profileOpened" ng-click="Main.toggleProfile()" class="md-icon-button" aria-label="More">
 				<md-icon aria-label="Open" class="material-icons">keyboard_arrow_right</md-icon>
 			</md-button>
-			<md-button hide-gt-xs ng-click="Main.toggleProfile()" class="md-icon-button" aria-label="More">
+			<md-button hide-gt-xs ng-click="Main.openProfile()" class="md-icon-button" aria-label="More">
 				<md-icon aria-label="Open" class="material-icons">menu</md-icon>
 			</md-button>
 		</div>
@@ -20,7 +20,7 @@
 				<h6 class="no-margin md-title">$0.00</h6>
 				<h6 class="no-margin md-subhead">BALANCE</h6>
 			</div>
-			<div class="avatar" ng-click="Main.openNotifs()">
+			<div class="avatar" ng-click="Main.openNotifications()">
 				<div class="noti-count text-center">3</div>
 			</div>
 		</div>

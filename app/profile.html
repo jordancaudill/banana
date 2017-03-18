@@ -1,12 +1,37 @@
 <div class="profile" ng-class="{'profile-closed': !Main.profileOpened}">
-    <div layout="row" layout-align="start center" class="banner">
-        <md-icon aria-label="Games" class="material-icons white game-icon">games</md-icon>
-        <h6 ng-if="Main.profileOpened" class="md-title white banana-title">Banana</h6>
-    </div>
-    <div layout="column">
-        <md-button layout="row" layout-align="start center" class="profile-button no-margin">
-            <md-icon aria-label="Dashboard" class="material-icons accent btn-icon game-icon">dvr</md-icon>
-            <h6 ng-if="Main.profileOpened" class="md-subhead banana-title">Dashboard</h6>
-        </md-button>
-    </div>
+	<div layout="row" layout-align="start center" class="banner">
+		<md-icon aria-label="Header" class="material-icons white game-icon">headset_mic</md-icon>
+		<h6 ng-if="Main.profileOpened" class="md-title white banana-title">Banana</h6>
+	</div>
+	<div layout="column">
+		<md-button layout="row" layout-align="start center" class="profile-button no-margin">
+			<md-icon aria-label="Dashboard" class="material-icons accent game-icon">dashboard</md-icon>
+			<h6 ng-if="Main.profileOpened" class="md-subhead banana-title">Dashboard</h6>
+		</md-button>
+		<md-button layout="row" layout-align="start center" class="profile-button active no-margin">
+			<md-icon aria-label="Games" class="material-icons white game-icon">games</md-icon>
+			<h6 ng-if="Main.profileOpened" class="md-subhead banana-title">Games</h6>
+		</md-button>
+		<md-button layout="row" layout-align="start center" class="profile-button no-margin">
+			<md-icon md-svg-src="assets/images/crown.svg" class="material-icons light-text game-icon" aria-label="Leaderboards"></md-icon>
+			<h6 ng-if="Main.profileOpened" class="md-subhead banana-title">Leaderboards</h6>
+		</md-button>
+		<md-button layout="row" layout-align="start center" class="profile-button no-margin">
+			<md-icon md-svg-src="assets/images/tooltip-outline-plus.svg" class="material-icons light-text game-icon" aria-label="Support"></md-icon>
+			<h6 ng-if="Main.profileOpened" class="md-subhead banana-title">Support</h6>
+		</md-button>
+		<div layout="row" layout-align="space-between center" id="overwatch" class="game">
+			<h6 ng-if="Main.profileOpened" class="md-subhead white banana-title">Overwatch</h6>
+			<md-button ng-if="Main.profileOpened" class="md-icon-button" aria-label="More">
+				<md-icon aria-label="more" class="material-icons white">more_vert</md-icon>
+			</md-button>
+		</div>
+		<div layout="row" layout-align="space-between center" id="hearthstone" class="game">
+			<h6 ng-if="Main.profileOpened" class="md-subhead white banana-title">Hearthstone</h6>
+			<md-button ng-if="Main.profileOpened" class="md-icon-button" aria-label="More">
+				<md-icon aria-label="more" class="material-icons white">more_vert</md-icon>
+			</md-button>
+		</div>
+
+	</div>
 </div>

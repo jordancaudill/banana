@@ -12,11 +12,19 @@
         // Any logic that needs to run when the controller loads should be placed here.
         vm.profileOpened = true;
         
-        vm.test = 'center';
-
         // Define functions here
         vm.toggleProfile = function() {
             vm.profileOpened = !vm.profileOpened;
         };
+
+        vm.openProfile = function() {
+            vm.profileOpened = true;
+            $mdSidenav('profile').toggle();
+        }
+
+        vm.openNotifications = function() {
+            $mdSidenav('notifications').toggle();
+        }
+
     }
 })();

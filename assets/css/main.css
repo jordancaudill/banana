@@ -57,7 +57,6 @@
 }
 
 .add-funds:hover {
-color: black;
 background-color: #4fdf97 !important;
 }
 
@@ -88,6 +87,25 @@ background-color: #4fdf97 !important;
 
 .avatar:hover .noti-count {
     background-color: #FFaaa3;
+}
+
+#overwatch {
+    background:    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+ url("../images/overwatch.jpg") no-repeat center;
+    height: 66px;
+    border-top: #303649 solid 2px;
+}
+
+#hearthstone {
+    background:    linear-gradient(
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
+    ),
+ url("../images/hearthstone.jpg") no-repeat center;
+    height: 66px;
 }
 
 .noti-count{
@@ -122,10 +140,46 @@ background-color: #4fdf97 !important;
     transform: translateX(-50%);
 }
 
+.noti-name {
+    color: dodgerblue
+}
+
+.noti-desc {
+    max-width: 200px;
+}
+
+.accept-button {
+    background-color: #26d07c !important;
+    color: white !important;
+}
+
+.decline-button {
+    background-color: #F4364C !important;
+    color: white !important;
+}
+
+.far {
+    height: 100vh;
+}
+
+.icon-time {
+    height: 20px;
+    margin-top: 15px;
+}
+
 .banner {
     height: 66px;
     background-color: #262a39;
     border-bottom: #303649 solid 2px;
+}
+
+.active {
+    background-color: #262a39;
+}
+
+.side-nav {
+    max-width: 250px !important;
+    min-width : 250px !important;
 }
 
 .accent {
@@ -136,15 +190,38 @@ button{
     border: none;
 }
 
+.light-text {
+    color: #ddddff; 
+}
 
 .profile-button {
     color: #ddddff; 
     text-transform: none !important;
-    padding: 10px;
     height: 66px;
+}
+
+.settings-button {
+    text-transform: none !important;
+    height: 66px;
+
 }
 
 .profile-closed .profile-button {
     padding: 0;
-    width: 66px;
+    min-width: 66px;
+}
+
+.noti-circle {
+    border-radius: 50%;
+    background-color: #F4364C;
+    width: 10px;
+    height: 10px;
+    z-index: 10;
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+
+.md-active md-icon {
+    color: #5648c1 !important;
 }
