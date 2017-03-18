@@ -127,7 +127,7 @@ background-color: #4fdf97 !important;
 
 .profile {
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #1C1F2A;
     width: 250px;
 }
